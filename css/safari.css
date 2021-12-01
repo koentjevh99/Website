@@ -121,7 +121,6 @@ a:link {
   }
 
   .mainholder1{      /*verander 1 naar 2 als je copy pasted en zo verder*/
-    border-radius: 10%;
     width: 1200px;
     height: 500px;
     margin: auto;
@@ -137,7 +136,6 @@ a:link {
     width: 1200px;
     height: 500px;
     margin: auto;
-    margin-top: 40px;
     border-style: solid;
     background-image: url('../img/lama.png'); /* verander afbeelding naam naar die van jou dier */
     background-repeat:   no-repeat;
