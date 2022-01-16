@@ -1,0 +1,230 @@
+body{
+    background-color: moccasin;
+    overflow: scroll;
+}
+
+.homebody{
+    width: 1200px;
+    height: 420px;
+    margin: auto;
+    margin-top: 50px;
+    background-image: url('../img/lionsafari.png'); /* verander afbeelding naam naar die van jou dier */
+    background-size: contain;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    position: relative;
+    background-size: cover;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.logo{
+ width: 300px;
+ margin-left: 0px;
+ margin-top: 0px;
+ float: left;
+ cursor: pointer;
+}
+
+#paginatitel{
+	font-family: 'Arima Madurai', cursive;
+	color: white;
+	font-size: 2rem;
+	text-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+	position: relative;
+	z-index: 3;
+  margin-left: 20px;
+  float: left;
+}
+
+
+/* unvisited link */
+a:link {
+    float: left;
+    margin-top: 50px;
+    margin-left: 100px;
+    font-size: 20pt;
+    color: White;
+    transition: 0.5s;
+  }
+
+  /* visited link */
+  a:visited {
+    color: white;
+  }
+
+  /* mouse over link */
+  a:hover {
+    color: darkorange;
+  }
+
+  /* selected link */
+  a:active {
+    color: darkorange;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  nav {
+    font-family: monospace;
+    transition: 1.5s;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  li {
+    color: #fff;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    text-shadow: 4px 4px 8px #000000;
+  }
+
+  li a {
+    color: #fff;
+  }
+
+  li:hover {
+    cursor: pointer;
+  }
+
+  ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 3rem;
+    left: 0;
+    display: none;
+  }
+
+  ul li:hover > ul,
+  ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+
+  ul li ul li {
+    clear: both;
+    width: 100%;
+  }
+
+  .mainholder1{      /*verander 1 naar 2 als je copy pasted en zo verder*/
+    border-radius: 10%;
+    width: 1200px;
+    height: 500px;
+    margin: auto;
+    margin-top: 40px;
+    border-style: solid;
+    background-image: url('../img/Soorten dierentuinen.jpg'); /* verander afbeelding naam naar die van jou dier */
+    background-repeat:   no-repeat;
+    background-size: cover;
+  }
+
+  .mainholder2{      /*verander 1 naar 2 als je copy pasted en zo verder*/
+    border-radius: 10%;
+    width: 1200px;
+    height: 500px;
+    margin: auto;
+    margin-top: 40px;
+    border-style: solid;
+    background-image: url('../img/Soorten dierentuinen2.jpg'); /* verander afbeelding naam naar die van jou dier */
+    background-repeat:   no-repeat;
+    background-size: cover;
+  }
+
+  .maintext1{
+    width: 400px;
+    height: 400px;
+    float: left;
+    background: rgba(0, 0, 0, .5);
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+
+  .maintext2{
+    width: 400px;
+    height: 400px;
+    float: right;
+    background: rgba(0, 0, 0, .5);
+    margin-left: 250px;
+    margin-right: 50px;
+    margin-top: 50px;
+  }
+
+  p{
+    color:white;
+    font-size: 11pt;
+    margin-left: 10px;
+  }
+
+  p::first-letter{
+    font-size: 25pt;
+    font-weight: bold;
+    color: tomato;
+  }
+
+  #terug{
+    font-family: 'Arima Madurai', cursive;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+    position: relative;
+    z-index: 3;
+    float: left;
+  }
+
+  #terug:hover{
+    font-family: 'Arima Madurai', cursive;
+    color: darkorange;
+    font-size: 2rem;
+    text-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+    position: relative;
+    z-index: 3;
+    float: left;
+  }
+
+  .bg {
+    animation:slide 25s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, olive 50%, moccasin 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:25s;
+  }
+
+  .bg3 {
+    animation-duration:25s;
+  }
+
+  h1 {
+    font-family:monospace;
+  }
+
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
